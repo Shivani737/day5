@@ -1,0 +1,43 @@
+//enum_calculator
+using System;
+					
+public class Calculator
+{
+	public enum Choiceenum
+
+	{
+		add,sub,mul,div
+	}
+	public static void Main(string[] args)
+	{
+	    
+		Console.WriteLine("enter a number");
+		int a=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("enter a number");
+		int b=Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine("enter a choice:");
+		
+		foreach(var item in Enum.GetValues(typeof(Choiceenum)))
+		{
+			Console.WriteLine(((int)item)+" "+item);
+		}
+		int Choice = Convert.ToInt32(Console.ReadLine());
+			switch(Choice)
+		{
+			case 1:
+				Console.WriteLine("add :{0}" +(a+b));
+				break;
+			case 2:
+				Console.WriteLine("sub :{0}" +(a-b));
+				break;
+			case 3:
+				Console.WriteLine("mul :{0}" +(a*b));
+				break;
+			case 4:
+				Console.WriteLine(" div :{0}" +(a/b));
+				break;
+			
+	    }
+	}
+}
