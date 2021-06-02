@@ -1,0 +1,22 @@
+//structure_person
+using System;
+					
+public struct Person
+{
+	 public string Name;
+	public int Age;
+	public int Weight;
+}
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		Person p1;
+		p1.Name="shivani";
+		p1.Age=21;
+		p1.Weight=55;
+		Console.WriteLine("Name : " +p1.Name+" \n Age:" +p1.Age + " \nWeight:"+p1.Weight);
+	   Console.ReadLine();
+	}
+}
+	

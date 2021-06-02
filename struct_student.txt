@@ -1,0 +1,21 @@
+//struct_stud
+using System;
+
+public struct Student
+{
+	public string name;
+	public int roll_no;
+	public int marks;
+}
+public class program
+{
+	public static void Main()
+	{
+		Student s;
+		s.name="shivani";
+		s.roll_no=1;
+		s.marks=500;
+		Console.Write(" Name: "+s.name + "\n Roll_no: " +s.roll_no+ "\n marks: " +s.marks);
+		Console.WriteLine();	
+		}
+	}
