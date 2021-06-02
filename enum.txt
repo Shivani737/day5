@@ -1,0 +1,20 @@
+//enum
+using System;
+					
+public class Class1
+{
+	//normal 0
+	//excellent 1
+	//default=0
+	//good=3
+	public enum DayofWeek
+	{
+		Sunday,Monday,tuesday,thursday,friday,saturday
+	}
+	public static void Main()
+	{
+		Console.WriteLine("day of week {0} {1}", (int)DayofWeek.Sunday, DayofWeek.Sunday);
+		Console.WriteLine("day of week {0} {1}", (int)DayofWeek.Monday, DayofWeek.Monday);
+		Console.WriteLine("day of week {0} {1}", (int)DayofWeek.tuesday, DayofWeek.tuesday);
+	}
+}
